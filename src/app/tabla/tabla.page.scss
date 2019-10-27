@@ -1,0 +1,17 @@
+.data-table{
+    max-width:300%;
+    white-space:nowrap;
+    min-width: 1500px;
+    margin: 20px auto;
+    table-layout: auto;
+}
+
+.data-col{
+    
+    background: #f0f0f0;
+}
+
+.has-focus {
+    
+    --background: #fdf696;
+}

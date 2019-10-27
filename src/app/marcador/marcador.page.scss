@@ -1,0 +1,35 @@
+.toast {
+    --max-width:1%;
+}
+
+.noscroll{
+    scroll-behavior: unset;
+}
+
+.centraritem1{
+
+    padding-left: 19%;
+    min-width: 100%;
+  
+}
+
+.centraritem2{
+
+    padding-left: 5%;
+    min-width: 100%;
+}
+
+.cantidad{
+    background-color: aliceblue;
+}
+
+.botones{
+    --background:rgb(17, 143, 216);
+    padding-left: 5%;
+   
+}
+
+.marcado{
+    color : green;
+    background-color: green;
+  }

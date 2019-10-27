@@ -1,0 +1,41 @@
+<ion-header>
+
+</ion-header>
+
+<h1></h1>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <h1>
+      <img src="/assets/airbus.png" alt="" />
+    </h1>
+      <ion-card-header>
+        <ion-card-subtitle>Sección 19 A350 XWB</ion-card-subtitle>
+        <ion-card-title>Bienvenido a "Quicklity"   v0.1</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Version de prueba de la aplicación para la realización de Quality Gates en Linea 2</p>
+      </ion-card-content>
+    </ion-card>
+    <ion-list lines="none">
+      <ion-list-header>
+        <ion-label>Accesos Directos</ion-label>
+      </ion-list-header>
+      <ion-item (click)="fase3()">
+        <ion-icon slot="start" color="medium" name="airplane" ></ion-icon>
+        <ion-label style="font-weight: bold">Empezar QG de Fase 3</ion-label>
+      </ion-item>
+      <ion-item (click)="fase4()">
+        <ion-icon slot="start" color="medium" name="airplane"></ion-icon>
+        <ion-label style="font-weight: bold" >Empezar QG de Fase 4</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon slot="start" color="medium" name="book"></ion-icon>
+        <ion-label>Instrucciones de Uso</ion-label>
+      </ion-item>
+      <ion-item (click)="ajustes()">
+        <ion-icon slot="start" color="medium" name="build"></ion-icon>
+        <ion-label>Ajustes</ion-label>
+      </ion-item>
+    </ion-list>
+</ion-content>

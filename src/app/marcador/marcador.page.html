@@ -1,0 +1,219 @@
+<ion-header>
+    <ion-grid class="ion-text-center">
+        <ion-row>
+          
+            <ion-col style="font-weight: bold" >
+              Frame
+            </ion-col>
+            <ion-col (click)="resetearvariables()" style="font-weight: bold" >
+              Omega
+            </ion-col>
+            <ion-col  style="font-weight: bold" >
+              Lado
+            </ion-col>
+         </ion-row>
+    </ion-grid>
+</ion-header>
+
+<ion-content>
+
+
+
+    <ion-grid class="ion-text-center">
+        <ion-row class="ion-justify-content-around" >
+          
+            <ion-col size="4" >
+               
+                <ion-list>
+
+                    <ion-item>
+                            <ion-button class="centraritem1" (click)="marcarfr('94')" expand="block" fill="clear" color="{{framecolor}}" expand="full" size="large">94</ion-button>
+                   </ion-item>
+                                                 
+                    <ion-item>
+                            <ion-button class="centraritem1"  (click)="marcarfr('95')"expand="block" fill="clear" color="{{framecolor}}" expand="full" size="large">95</ion-button>
+                    </ion-item>
+                    <ion-item>
+                                <ion-button class="centraritem1"  (click)="marcarfr('96')"expand="block" fill="clear" color="{{framecolor}}" expand="full" size="large">96</ion-button>
+                    </ion-item>
+                    <ion-item>
+                                <ion-button class="centraritem1"  (click)="marcarfr('97')"expand="block" fill="clear" color="{{framecolor}}" expand="full" size="large">97</ion-button>
+                    </ion-item>
+                    <ion-item>
+                                <ion-button class="centraritem1"  (click)="marcarfr('98')"expand="block" fill="clear" color="{{framecolor}}" expand="full" size="large">98</ion-button>
+                    </ion-item>
+                    <ion-item>
+                                <ion-button class="centraritem1"  (click)="marcarfr('99')"expand="block" fill="clear" color="{{framecolor}}" expand="full" size="large">99</ion-button>
+                    </ion-item>
+                    <ion-item>
+                                <ion-button class="centraritem2"  (click)="marcarfr('100')"expand="block" fill="clear" color="{{framecolor}}" expand="full" size="large">100</ion-button>
+                    </ion-item>
+                    <ion-item>
+                                <ion-button class="centraritem2"  (click)="marcarfr('101')"expand="block" fill="clear" color="{{framecolor}}" expand="full" size="large">101</ion-button>
+                    </ion-item>
+                    <ion-item>
+                                <ion-button class="centraritem2"  (click)="marcarfr('102')"expand="block" fill="clear" color="{{framecolor}}" expand="full" size="large">102</ion-button>
+                    </ion-item>
+                    <ion-item lines="none" (click)="resetearvariables()" style="padding-left: 25%" >
+                        
+                        <ion-icon color="danger" name="trash"></ion-icon>
+                </ion-item>
+                    
+                  </ion-list>
+               
+            </ion-col>
+            
+            <ion-col size="4" >
+                <ion-list>
+                                <div *ngIf="up">
+                                                
+                    <ion-item>
+                            <ion-button class="centraritem1" (click)="marcaromega('1-2')" expand="block" fill="clear" id="1" expand="full" color="{{omegacolor}}" size="large">1-2</ion-button>
+                    </ion-item>
+                    <ion-item>
+                            <ion-button class="centraritem1" (click)="marcaromega('2-3')"expand="block" fill="clear" id="2" expand="full" color="{{omegacolor}}" size="large">2-3</ion-button>
+                    </ion-item>
+                    <ion-item>
+                            <ion-button class="centraritem1" (click)="marcaromega('3-4')"expand="block" fill="clear" id="3" expand="full" color="{{omegacolor}}" size="large">3-4</ion-button>
+                    </ion-item>
+                    <ion-item>
+                            <ion-button class="centraritem1" (click)="marcaromega('4-5')"expand="block" fill="clear" id="4" expand="full" color="{{omegacolor}}" size="large">4-5</ion-button>
+                    </ion-item>
+                    <ion-item>
+                            <ion-button class="centraritem1" (click)="marcaromega('5-6')" expand="block" fill="clear" id="5" expand="full" color="{{omegacolor}}" size="large">5-6</ion-button>
+                    </ion-item>
+                    <ion-item>
+                            <ion-button class="centraritem1" (click)="marcaromega('6-7')"expand="block" fill="clear" id="6" expand="full" color="{{omegacolor}}" size="large">6-7</ion-button>
+                    </ion-item>
+                                
+                    <ion-item>
+                            <ion-button class="centraritem1" (click)="marcaromega('7-8')"expand="block" fill="clear" id="7" expand="full" color="{{omegacolor}}" size="large">7-8</ion-button>
+                    </ion-item>
+                    <ion-item *ngIf="omegastras">               
+                            <ion-button class="centraritem1" (click)="marcaromega('8-9')" expand="block" fill="clear" id="8" expand="full" color="{{omegacolor}}" size="large">8-9</ion-button>
+                    </ion-item>
+                    <ion-item *ngIf="omegastras">
+                            <ion-button class="centraritem1" (click)="marcaromega('9-10')" expand="block" fill="clear" id="9" expand="full" color="{{omegacolor}}" size="large">9-10</ion-button>
+                    </ion-item>
+                    <ion-item *ngIf="omegastras">
+                            <ion-button class="centraritem1" (click)="marcaromega('10-11')" expand="block" fill="clear" id="10" expand="full" color="{{omegacolor}}" size="large">10-11</ion-button>
+                    </ion-item>
+                    <ion-item *ngIf="omegastras">
+                            <ion-button class="centraritem1" (click)="marcaromega('11-12')" expand="block" fill="clear" id="11" expand="full" color="{{omegacolor}}" size="large">11-12</ion-button>
+                    </ion-item>
+                    <ion-item *ngIf="omegastras">
+                            <ion-button class="centraritem1" (click)="marcaromega('12-13')" expand="block" fill="clear" id="12" expand="full" color="{{omegacolor}}" size="large">12-13</ion-button>
+                    </ion-item>
+                                </div>
+                                
+                                <div *ngIf="lo">
+                    <ion-item *ngIf="omegastras">
+                        <ion-button class="centraritem1" (click)="marcaromega('13-14')" expand="block" fill="clear" id="13" expand="full" color="{{omegacolor}}" size="large">13-14</ion-button>
+                    </ion-item>
+                    <ion-item>
+                        <ion-button  class="centraritem1"    (click)="marcaromega('14-15')" expand="block" fill="clear" id="13" expand="full" color="{{omegacolor}}" size="large">14-15</ion-button>
+                </ion-item>
+                
+                <ion-item>
+                        <ion-button class="centraritem1" (click)="marcaromega('15-16')" expand="block" fill="clear" id="13" expand="full" color="{{omegacolor}}" size="large">15-16</ion-button>
+                </ion-item>
+                <ion-item>
+                        <ion-button class="centraritem1" (click)="marcaromega('16-17')" expand="block" fill="clear" id="13" expand="full" color="{{omegacolor}}" size="large">16-17</ion-button>
+                </ion-item>
+                <ion-item>
+                        <ion-button class="centraritem1" (click)="marcaromega('17-18')" expand="block" fill="clear" id="13" expand="full" color="{{omegacolor}}" size="large">17-18</ion-button>
+                </ion-item>
+                <ion-item>
+                        <ion-button class="centraritem1" (click)="marcaromega('18-19')" expand="block" fill="clear" id="13" expand="full" color="{{omegacolor}}" size="large">18-19</ion-button>
+                </ion-item>
+                <ion-item>
+                        <ion-button class="centraritem1" (click)="marcaromega('19-20')" expand="block" fill="clear" id="13" expand="full" color="{{omegacolor}}" size="large">19-20</ion-button>
+                </ion-item>
+                <ion-item>
+                        <ion-button class="centraritem1" (click)="marcaromega('20-21')" expand="block" fill="clear" id="13" expand="full" color="{{omegacolor}}" size="large">20-21</ion-button>
+                </ion-item>
+                <ion-item>
+                        <ion-button class="centraritem1" (click)="marcaromega('21-22')" expand="block" fill="clear" id="13" expand="full" color="{{omegacolor}}" size="large">21-22</ion-button>
+                </ion-item>
+                <ion-item>
+                        <ion-button class="centraritem1" (click)="marcaromega('22-23')" expand="block" fill="clear" id="13" expand="full" color="{{omegacolor}}" size="large">22-23</ion-button>
+                </ion-item>
+               
+                         </div>
+                  </ion-list>
+            </ion-col>
+            <ion-col class="ion-justify-content-around" size="4" >
+                    
+                <ion-list lines="none">
+                     
+                    <ion-item>
+                            <ion-button class="centraritem2" (click)="marcarlado('RH')" color="{{RHcolor}}" id="RH" expand="full" size="large" >RH</ion-button>
+                    </ion-item>
+                    <ion-item>
+                            <ion-button class="centraritem2" (click)="marcarlado('LH')" color="{{LHcolor}}" id="LH" expand="full" size="large">LH</ion-button>
+                    </ion-item>
+                    <ion-item>
+                            <ion-button class="centraritem2" (click)="marcarnudo('NUDO')" expand="full" color="{{Nudocolor}}" size="default">Nudo</ion-button>
+                    </ion-item>
+                    <ion-item>
+                            <ion-button class="centraritem2" (click)="marcarintpiel('INTERIOR')" expand="block" fill="clear" expand="full" color="{{interiorcolor}}" size="default">Inter</ion-button>
+                    </ion-item>
+                    <ion-item>
+                            <ion-button class="centraritem2" (click)="marcarintpiel('PIEL')" expand="block" fill="clear" expand="full" color="{{pielcolor}}"  size="default">Piel</ion-button>
+                    </ion-item>
+                    <ion-item class="cantidad"  >
+                            
+                                <ion-input [(ngModel)]="q" placeholder="Cantidad" type="number"></ion-input>
+                </ion-item>
+                <ion-item style="padding-left: 25%" >
+                                <ion-badge color="danger">{{lineas}}</ion-badge>  
+                </ion-item>
+                
+                     
+                  </ion-list>
+            </ion-col>
+         </ion-row>
+    </ion-grid>
+</ion-content>
+<ion-footer>
+
+    <ion-fab vertical="center" horizontal="center" edge slot="fixed">
+        <ion-fab-button color="primary" (click)="iratabla()">
+          <ion-icon name="menu"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+
+
+    <ion-grid class="no-padding" class="ion-text-center">
+        <ion-row>
+          
+            <ion-col size="6">
+                <ion-button (click)="remache()" expand="block" color="dark">Remache</ion-button>
+            </ion-col>
+            
+            <ion-col size="6" >
+                <ion-button (click)="pieza()" expand="block" color="dark">Pieza</ion-button>
+            </ion-col>
+            
+         </ion-row>
+         <ion-row>
+          
+            <ion-col size="6" >
+                <ion-button  (click)="remachenc()" expand="block" color="warning">Remache NC</ion-button>
+            </ion-col>
+            
+            <ion-col  size="6">
+                <ion-button (click)="piezanc()" expand="block" color="warning">Pieza NC</ion-button>
+            </ion-col>
+            
+         </ion-row>
+         <ion-row>
+          
+            <ion-col  size="12">
+                <ion-button (click)="popupotros()" expand="block" color="dark">Otros</ion-button>
+            </ion-col>
+            
+         </ion-row>
+    </ion-grid>
+     
+ </ion-footer>

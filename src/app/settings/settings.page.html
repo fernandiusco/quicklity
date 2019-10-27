@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+         <ion-title style="padding-left: 30%" >Ajustes</ion-title>
+    <ion-buttons slot="start">
+        <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div text-center>
+				<h4>Registro de Usuario</h4>
+			</div>
+<h5></h5>
+
+  <ion-item>
+      <ion-label position="floating">¿Quien Eres?</ion-label>
+      <ion-input [(ngModel)]="usuario" placeholder="Pon tu nombre aqui"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating">¿Para que Empresa Trabajas?</ion-label>
+        <ion-input [(ngModel)]="empresa" placeholder="Pon tu empresa Aqui"></ion-input>
+      </ion-item>
+      <ion-item>
+
+      </ion-item>
+      <ion-item>
+        <h5>Nombre Registrado: {{usuario}}</h5>  
+      </ion-item>
+      <ion-item>
+          <h5>Empresa Registrada: {{empresa}}</h5>
+      </ion-item>
+      <ion-item>
+
+      </ion-item>
+      <ion-item>
+          <ion-label style="padding-left: 6%" >Versión v0.1</ion-label>
+          <ion-button size="default" color="success">Buscar Updates</ion-button>
+      </ion-item>
+      <ion-item>
+          <ion-label style="padding-left: 5%" >¿Sugerencias?</ion-label>
+          <ion-button href="mailto:fernando.f.barrio-hernandez.external@airbus.com?subject=Feedback Sobre App Quicklity" size="default" color="danger">Mandame un Mail</ion-button>
+      </ion-item>
+
+  
+
+
+</ion-content>
+<ion-button (click)="guardarajustes()" size="large" expand="full" >Guardar</ion-button>
+<h1></h1>

@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title class="ion-text-center">{{fase}}</ion-title>
+    <ion-title class="ion-text-center">Selector de Avión</ion-title>
+      </ion-toolbar>
+ </ion-header>
+
+<ion-content>
+
+    <ion-item>
+        <ion-label position="floating">MSN</ion-label>
+        <ion-input type="number" [(ngModel)]="msn"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label>Versión</ion-label>
+          <ion-select [(ngModel)]="version" placeholder="V1000 / V900">
+            <ion-select-option value="v900">V900</ion-select-option>
+            <ion-select-option value="v1000">V1000</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label>Estación</ion-label>
+            <ion-select [(ngModel)]="vgf" placeholder="VGF">
+              <ion-select-option value="VGF310">VGF 310</ion-select-option>
+              <ion-select-option value="VGF320">VGF 320</ion-select-option>
+              <ion-select-option value="VGF330">VGF 330</ion-select-option>
+              <ion-select-option value="VGF340">VGF 340</ion-select-option>
+              <ion-select-option value="VGF410">VGF 410</ion-select-option>
+              <ion-select-option value="VGF420">VGF 420</ion-select-option>
+             
+            </ion-select>
+          </ion-item>
+
+<ion-item > 
+    <ion-label  class="ion-text-center">Selecciona Zona</ion-label>
+</ion-item>
+
+          <ion-segment [(ngModel)]="upperlower" (ionChange)="cambiodefoto()" >
+              <ion-segment-button value="UPPER">
+                <ion-label>Upper</ion-label>
+              </ion-segment-button>
+              <ion-segment-button value="LOWER">
+                <ion-label>Lower</ion-label>
+              </ion-segment-button>
+            </ion-segment>
+
+<img src={{foto}}>
+<!--  <img src="/assets/s19.PNG">  -->
+
+         </ion-content>
+
+         <ion-button (click)="almacenaravion()" (click)="comenzarinspeccion()" size="large">Comenzar Inspección</ion-button>
+         
+         <h1></h1>

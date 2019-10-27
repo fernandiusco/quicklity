@@ -1,0 +1,8 @@
+{
+  "name": "quicklity",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "463b7412"
+}
